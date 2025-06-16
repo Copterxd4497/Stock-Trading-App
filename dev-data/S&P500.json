@@ -1,0 +1,1002 @@
+[
+  {
+    "initials": "JKE",
+    "full_name": "JANE KEMP",
+    "country": "Thailand",
+    "sector": "Industrials",
+    "industry": "Construction and Engineering",
+    "PE": 15.75,
+    "price": 54.32,
+    "Available_Stock": 3900.0
+  },
+  {
+    "initials": "LMI",
+    "full_name": "LIAM MINT",
+    "country": "USA",
+    "sector": "Consumer Discretionary",
+    "industry": "Specialty Retail",
+    "PE": 22.4,
+    "price": 21.78,
+    "Available_Stock": 2275.0
+  },
+  {
+    "initials": "NPA",
+    "full_name": "NINA PARK",
+    "country": "China",
+    "sector": "Materials",
+    "industry": "Chemicals",
+    "PE": 18.9,
+    "price": 79.45,
+    "Available_Stock": 1675.0
+  },
+  {
+    "initials": "RTO",
+    "full_name": "REID TOWN",
+    "country": "UK",
+    "sector": "Financials",
+    "industry": "Consumer Finance",
+    "PE": 12.6,
+    "price": 38.91,
+    "Available_Stock": 3125.0
+  },
+  {
+    "initials": "SVU",
+    "full_name": "SOPHIE VUE",
+    "country": "France",
+    "sector": "Health Care",
+    "industry": "Health Care Providers and Services",
+    "PE": 25.3,
+    "price": 65.23,
+    "Available_Stock": 1875.0
+  },
+  {
+    "initials": "TWE",
+    "full_name": "TROY WEBB",
+    "country": "Thailand",
+    "sector": "Information Technology",
+    "industry": "IT Services",
+    "PE": 30.15,
+    "price": 92.67,
+    "Available_Stock": 2475.0
+  },
+  {
+    "initials": "UXI",
+    "full_name": "ULYSSES XI",
+    "country": "USA",
+    "sector": "Energy",
+    "industry": "Oil, Gas and Consumable Fuels",
+    "PE": 19.85,
+    "price": 47.89,
+    "Available_Stock": 3775.0
+  },
+  {
+    "initials": "BLA",
+    "full_name": "BREE LANE",
+    "country": "China",
+    "sector": "Consumer Staples",
+    "industry": "Food Products",
+    "PE": 17.25,
+    "price": 33.45,
+    "Available_Stock": 2950.0
+  },
+  {
+    "initials": "CWI",
+    "full_name": "CLAY WISE",
+    "country": "UK",
+    "sector": "Real Estate",
+    "industry": "Real Estate Management and Development",
+    "PE": 14.8,
+    "price": 68.12,
+    "Available_Stock": 1525.0
+  },
+  {
+    "initials": "DHA",
+    "full_name": "DYLAN HART",
+    "country": "France",
+    "sector": "Communication Services",
+    "industry": "Media",
+    "PE": 23.6,
+    "price": 41.89,
+    "Available_Stock": 3400.0
+  },
+  {
+    "initials": "EPO",
+    "full_name": "ELLIOT POE",
+    "country": "USA",
+    "sector": "Utilities",
+    "industry": "Independent Power and Renewable Electricity Producers",
+    "PE": 28.45,
+    "price": 87.34,
+    "Available_Stock": 2050.0
+  },
+  {
+    "initials": "FSA",
+    "full_name": "FIONA SAGE",
+    "country": "Thailand",
+    "sector": "Materials",
+    "industry": "Metals and Mining",
+    "PE": 16.95,
+    "price": 29.67,
+    "Available_Stock": 2675.0
+  },
+  {
+    "initials": "GRA",
+    "full_name": "GRAY ROSS",
+    "country": "China",
+    "sector": "Industrials",
+    "industry": "Trading Companies and Distributors",
+    "PE": 20.1,
+    "price": 75.91,
+    "Available_Stock": 1825.0
+  },
+  {
+    "initials": "HVA",
+    "full_name": "HEIDI VALE",
+    "country": "UK",
+    "sector": "Consumer Discretionary",
+    "industry": "Hotels, Restaurants and Leisure",
+    "PE": 26.75,
+    "price": 52.38,
+    "Available_Stock": 3225.0
+  },
+  {
+    "initials": "IVO",
+    "full_name": "IAN VOSS",
+    "country": "France",
+    "sector": "Health Care",
+    "industry": "Health Care Providers and Services",
+    "PE": 31.2,
+    "price": 96.45,
+    "Available_Stock": 1375.0
+  },
+  {
+    "initials": "JLY",
+    "full_name": "JULIA LYNN",
+    "country": "USA",
+    "sector": "Financials",
+    "industry": "Consumer Finance",
+    "PE": 13.45,
+    "price": 19.23,
+    "Available_Stock": 3575.0
+  },
+  {
+    "initials": "KNO",
+    "full_name": "KATE NORA",
+    "country": "Thailand",
+    "sector": "Information Technology",
+    "industry": "Electronic Equipment, Instruments and Components",
+    "PE": 27.9,
+    "price": 63.78,
+    "Available_Stock": 1725.0
+  },
+  {
+    "initials": "MPE",
+    "full_name": "MILES PECK",
+    "country": "China",
+    "sector": "Energy",
+    "industry": "Oil, Gas and Consumable Fuels",
+    "PE": 18.3,
+    "price": 44.56,
+    "Available_Stock": 3025.0
+  },
+  {
+    "initials": "ORA",
+    "full_name": "OLIVE RAY",
+    "country": "UK",
+    "sector": "Consumer Staples",
+    "industry": "Food Products",
+    "PE": 21.85,
+    "price": 81.67,
+    "Available_Stock": 1925.0
+  },
+  {
+    "initials": "PQU",
+    "full_name": "PAUL QUIN",
+    "country": "France",
+    "sector": "Real Estate",
+    "industry": "Real Estate Management and Development",
+    "PE": 15.1,
+    "price": 36.12,
+    "Available_Stock": 3275.0
+  },
+  {
+    "initials": "QSE",
+    "full_name": "QUINN SETH",
+    "country": "USA",
+    "sector": "Industrials",
+    "industry": "Containers and Packaging",
+    "PE": 24.95,
+    "price": 58.9,
+    "Available_Stock": 1475.0
+  },
+  {
+    "initials": "RVI",
+    "full_name": "ROSE VINE",
+    "country": "Thailand",
+    "sector": "Consumer Discretionary",
+    "industry": "Textiles, Apparel and Luxury Goods",
+    "PE": 29.6,
+    "price": 73.45,
+    "Available_Stock": 2875.0
+  },
+  {
+    "initials": "SYA",
+    "full_name": "SEAN YALE",
+    "country": "China",
+    "sector": "Materials",
+    "industry": "Chemicals",
+    "PE": 17.8,
+    "price": 25.34,
+    "Available_Stock": 3625.0
+  },
+  {
+    "initials": "TZA",
+    "full_name": "TINA ZANE",
+    "country": "UK",
+    "sector": "Health Care",
+    "industry": "Health Care Providers and Services",
+    "PE": 32.15,
+    "price": 89.12,
+    "Available_Stock": 1575.0
+  },
+  {
+    "initials": "UWE",
+    "full_name": "UMA WEST",
+    "country": "France",
+    "sector": "Information Technology",
+    "industry": "IT Services",
+    "PE": 19.4,
+    "price": 42.78,
+    "Available_Stock": 3175.0
+  },
+  {
+    "initials": "VXI",
+    "full_name": "VICTOR XI",
+    "country": "USA",
+    "sector": "Energy",
+    "industry": "Oil, Gas and Consumable Fuels",
+    "PE": 23.1,
+    "price": 67.89,
+    "Available_Stock": 1775.0
+  },
+  {
+    "initials": "WYO",
+    "full_name": "WILL YOUNG",
+    "country": "Thailand",
+    "sector": "Financials",
+    "industry": "Consumer Finance",
+    "PE": 16.25,
+    "price": 31.56,
+    "Available_Stock": 3425.0
+  },
+  {
+    "initials": "XZA",
+    "full_name": "XENA ZARA",
+    "country": "China",
+    "sector": "Consumer Staples",
+    "industry": "Food Products",
+    "PE": 28.7,
+    "price": 84.23,
+    "Available_Stock": 1975.0
+  },
+  {
+    "initials": "YBO",
+    "full_name": "YURI BOND",
+    "country": "UK",
+    "sector": "Real Estate",
+    "industry": "Real Estate Management and Development",
+    "PE": 14.35,
+    "price": 49.67,
+    "Available_Stock": 3075.0
+  },
+  {
+    "initials": "ZCA",
+    "full_name": "ZOE CARY",
+    "country": "France",
+    "sector": "Communication Services",
+    "industry": "Media",
+    "PE": 26.2,
+    "price": 70.45,
+    "Available_Stock": 1425.0
+  },
+  {
+    "initials": "ADE",
+    "full_name": "ALEX DEAN",
+    "country": "USA",
+    "sector": "Utilities",
+    "industry": "Independent Power and Renewable Electricity Producers",
+    "PE": 20.65,
+    "price": 27.89,
+    "Available_Stock": 3525.0
+  },
+  {
+    "initials": "BFO",
+    "full_name": "BETH FORD",
+    "country": "Thailand",
+    "sector": "Industrials",
+    "industry": "Construction and Engineering",
+    "PE": 18.15,
+    "price": 93.78,
+    "Available_Stock": 1625.0
+  },
+  {
+    "initials": "CHO",
+    "full_name": "CARA HOLT",
+    "country": "China",
+    "sector": "Consumer Discretionary",
+    "industry": "Automobile Components",
+    "PE": 31.75,
+    "price": 55.12,
+    "Available_Stock": 2975.0
+  },
+  {
+    "initials": "DJA",
+    "full_name": "DREW JAY",
+    "country": "UK",
+    "sector": "Materials",
+    "industry": "Metals and Mining",
+    "PE": 15.9,
+    "price": 39.45,
+    "Available_Stock": 3375.0
+  },
+  {
+    "initials": "ELA",
+    "full_name": "ELLE LANE",
+    "country": "France",
+    "sector": "Health Care",
+    "industry": "Health Care Providers and Services",
+    "PE": 24.3,
+    "price": 82.67,
+    "Available_Stock": 1275.0
+  },
+  {
+    "initials": "FMO",
+    "full_name": "FAITH MOORE",
+    "country": "USA",
+    "sector": "Information Technology",
+    "industry": "IT Services",
+    "PE": 29.15,
+    "price": 46.23,
+    "Available_Stock": 3725.0
+  },
+  {
+    "initials": "GNA",
+    "full_name": "GABE NASH",
+    "country": "Thailand",
+    "sector": "Energy",
+    "industry": "Oil, Gas and Consumable Fuels",
+    "PE": 17.6,
+    "price": 61.78,
+    "Available_Stock": 1875.0
+  },
+  {
+    "initials": "HOW",
+    "full_name": "HOPE OWEN",
+    "country": "China",
+    "sector": "Financials",
+    "industry": "Consumer Finance",
+    "PE": 22.85,
+    "price": 34.89,
+    "Available_Stock": 3225.0
+  },
+  {
+    "initials": "IPE",
+    "full_name": "IAN PERRY",
+    "country": "UK",
+    "sector": "Consumer Staples",
+    "industry": "Food Products",
+    "PE": 19.25,
+    "price": 77.34,
+    "Available_Stock": 1525.0
+  },
+  {
+    "initials": "JQU",
+    "full_name": "JUNE QUAY",
+    "country": "France",
+    "sector": "Real Estate",
+    "industry": "Real Estate Management and Development",
+    "PE": 26.95,
+    "price": 50.12,
+    "Available_Stock": 3475.0
+  },
+  {
+    "initials": "KRE",
+    "full_name": "KYLE REED",
+    "country": "USA",
+    "sector": "Communication Services",
+    "industry": "Media",
+    "PE": 14.7,
+    "price": 95.67,
+    "Available_Stock": 1675.0
+  },
+  {
+    "initials": "LST",
+    "full_name": "LILY STONE",
+    "country": "Thailand",
+    "sector": "Industrials",
+    "industry": "Trading Companies and Distributors",
+    "PE": 30.4,
+    "price": 23.45,
+    "Available_Stock": 2925.0
+  },
+  {
+    "initials": "MTR",
+    "full_name": "MATT TROY",
+    "country": "China",
+    "sector": "Consumer Discretionary",
+    "industry": "Hotels, Restaurants and Leisure",
+    "PE": 18.8,
+    "price": 69.12,
+    "Available_Stock": 1375.0
+  },
+  {
+    "initials": "NUD",
+    "full_name": "NORA UDELL",
+    "country": "UK",
+    "sector": "Materials",
+    "industry": "Chemicals",
+    "PE": 25.65,
+    "price": 41.23,
+    "Available_Stock": 3575.0
+  },
+  {
+    "initials": "OVO",
+    "full_name": "OLIVE VOSS",
+    "country": "France",
+    "sector": "Health Care",
+    "industry": "Health Care Providers and Services",
+    "PE": 16.45,
+    "price": 86.89,
+    "Available_Stock": 1725.0
+  },
+  {
+    "initials": "PWA",
+    "full_name": "PETE WADE",
+    "country": "USA",
+    "sector": "Information Technology",
+    "industry": "Electronic Equipment, Instruments and Components",
+    "PE": 21.3,
+    "price": 32.78,
+    "Available_Stock": 3275.0
+  },
+  {
+    "initials": "QXE",
+    "full_name": "QUADE XENO",
+    "country": "Thailand",
+    "sector": "Energy",
+    "industry": "Oil, Gas and Consumable Fuels",
+    "PE": 27.45,
+    "price": 58.34,
+    "Available_Stock": 1475.0
+  },
+  {
+    "initials": "RYA",
+    "full_name": "RUTH YALE",
+    "country": "China",
+    "sector": "Financials",
+    "industry": "Consumer Finance",
+    "PE": 19.95,
+    "price": 74.56,
+    "Available_Stock": 3025.0
+  },
+  {
+    "initials": "SZO",
+    "full_name": "SAM ZORN",
+    "country": "UK",
+    "sector": "Consumer Staples",
+    "industry": "Food Products",
+    "PE": 23.75,
+    "price": 28.12,
+    "Available_Stock": 3675.0
+  },
+  {
+    "initials": "TAR",
+    "full_name": "TINA ARLO",
+    "country": "France",
+    "sector": "Real Estate",
+    "industry": "Real Estate Management and Development",
+    "PE": 15.2,
+    "price": 91.23,
+    "Available_Stock": 1825.0
+  },
+  {
+    "initials": "UBE",
+    "full_name": "URIS BELL",
+    "country": "USA",
+    "sector": "Communication Services",
+    "industry": "Media",
+    "PE": 29.8,
+    "price": 45.67,
+    "Available_Stock": 3425.0
+  },
+  {
+    "initials": "VCA",
+    "full_name": "VICK CARY",
+    "country": "Thailand",
+    "sector": "Industrials",
+    "industry": "Containers and Packaging",
+    "PE": 17.15,
+    "price": 66.34,
+    "Available_Stock": 1575.0
+  },
+  {
+    "initials": "WDA",
+    "full_name": "WALT DANE",
+    "country": "China",
+    "sector": "Consumer Discretionary",
+    "industry": "Textiles, Apparel and Luxury Goods",
+    "PE": 24.5,
+    "price": 37.89,
+    "Available_Stock": 3175.0
+  },
+  {
+    "initials": "XEL",
+    "full_name": "XAVIER ELM",
+    "country": "UK",
+    "sector": "Materials",
+    "industry": "Metals and Mining",
+    "PE": 20.85,
+    "price": 83.45,
+    "Available_Stock": 1275.0
+  },
+  {
+    "initials": "YFA",
+    "full_name": "YURI FAYE",
+    "country": "France",
+    "sector": "Health Care",
+    "industry": "Health Care Providers and Services",
+    "PE": 26.1,
+    "price": 59.12,
+    "Available_Stock": 3725.0
+  },
+  {
+    "initials": "ZGA",
+    "full_name": "ZARA GALE",
+    "country": "USA",
+    "sector": "Information Technology",
+    "industry": "IT Services",
+    "PE": 18.5,
+    "price": 25.67,
+    "Available_Stock": 1925.0
+  },
+  {
+    "initials": "AHA",
+    "full_name": "AMY HART",
+    "country": "Thailand",
+    "sector": "Energy",
+    "industry": "Oil, Gas and Consumable Fuels",
+    "PE": 31.35,
+    "price": 71.89,
+    "Available_Stock": 3075.0
+  },
+  {
+    "initials": "BIV",
+    "full_name": "BLAKE IVES",
+    "country": "China",
+    "sector": "Financials",
+    "industry": "Consumer Finance",
+    "PE": 16.8,
+    "price": 43.12,
+    "Available_Stock": 1425.0
+  },
+  {
+    "initials": "CJE",
+    "full_name": "CODY JENK",
+    "country": "UK",
+    "sector": "Consumer Staples",
+    "industry": "Food Products",
+    "PE": 22.15,
+    "price": 88.34,
+    "Available_Stock": 3525.0
+  },
+  {
+    "initials": "DKI",
+    "full_name": "DEAN KIRK",
+    "country": "France",
+    "sector": "Real Estate",
+    "industry": "Real Estate Management and Development",
+    "PE": 19.7,
+    "price": 30.45,
+    "Available_Stock": 1675.0
+  },
+  {
+    "initials": "ELL",
+    "full_name": "ERIN LLOYD",
+    "country": "USA",
+    "sector": "Communication Services",
+    "industry": "Media",
+    "PE": 25.95,
+    "price": 64.78,
+    "Available_Stock": 2975.0
+  },
+  {
+    "initials": "FMS",
+    "full_name": "FINN MOSS",
+    "country": "Thailand",
+    "sector": "Industrials",
+    "industry": "Construction and Engineering",
+    "PE": 14.25,
+    "price": 97.12,
+    "Available_Stock": 1325.0
+  },
+  {
+    "initials": "GNE",
+    "full_name": "GINA NEAL",
+    "country": "China",
+    "sector": "Consumer Discretionary",
+    "industry": "Hotels, Restaurants and Leisure",
+    "PE": 28.25,
+    "price": 51.34,
+    "Available_Stock": 3375.0
+  },
+  {
+    "initials": "HOR",
+    "full_name": "HUGH ORR",
+    "country": "UK",
+    "sector": "Materials",
+    "industry": "Chemicals",
+    "PE": 17.35,
+    "price": 35.67,
+    "Available_Stock": 1775.0
+  },
+  {
+    "initials": "IPA",
+    "full_name": "IDA PACE",
+    "country": "France",
+    "sector": "Health Care",
+    "industry": "Health Care Providers and Services",
+    "PE": 23.4,
+    "price": 80.89,
+    "Available_Stock": 3625.0
+  },
+  {
+    "initials": "JQI",
+    "full_name": "JOE QUILL",
+    "country": "USA",
+    "sector": "Information Technology",
+    "industry": "IT Services",
+    "PE": 30.7,
+    "price": 46.89,
+    "Available_Stock": 1525.0
+  },
+  {
+    "initials": "KRO",
+    "full_name": "KARA ROSS",
+    "country": "Thailand",
+    "sector": "Energy",
+    "industry": "Oil, Gas and Consumable Fuels",
+    "PE": 18.95,
+    "price": 62.34,
+    "Available_Stock": 3225.0
+  },
+  {
+    "initials": "LSE",
+    "full_name": "LEAH SETH",
+    "country": "China",
+    "sector": "Financials",
+    "industry": "Consumer Finance",
+    "PE": 15.55,
+    "price": 94.56,
+    "Available_Stock": 1875.0
+  },
+  {
+    "initials": "MTE",
+    "full_name": "MIKE TEAL",
+    "country": "UK",
+    "sector": "Consumer Staples",
+    "industry": "Food Products",
+    "PE": 27.1,
+    "price": 39.12,
+    "Available_Stock": 3475.0
+  },
+  {
+    "initials": "NUL",
+    "full_name": "NELL ULM",
+    "country": "France",
+    "sector": "Real Estate",
+    "industry": "Real Estate Management and Development",
+    "PE": 21.65,
+    "price": 73.78,
+    "Available_Stock": 1375.0
+  },
+  {
+    "initials": "OVA",
+    "full_name": "OTTO VAIL",
+    "country": "USA",
+    "sector": "Communication Services",
+    "industry": "Media",
+    "PE": 16.1,
+    "price": 28.34,
+    "Available_Stock": 3675.0
+  },
+  {
+    "initials": "PWO",
+    "full_name": "PAIGE WOLF",
+    "country": "Thailand",
+    "sector": "Industrials",
+    "industry": "Trading Companies and Distributors",
+    "PE": 24.75,
+    "price": 85.12,
+    "Available_Stock": 1725.0
+  },
+  {
+    "initials": "QXR",
+    "full_name": "QUIN XRAY",
+    "country": "China",
+    "sector": "Consumer Discretionary",
+    "industry": "Specialty Retail",
+    "PE": 29.35,
+    "price": 57.89,
+    "Available_Stock": 3025.0
+  },
+  {
+    "initials": "RYO",
+    "full_name": "REX YOUNG",
+    "country": "UK",
+    "sector": "Materials",
+    "industry": "Metals and Mining",
+    "PE": 17.9,
+    "price": 33.78,
+    "Available_Stock": 1575.0
+  },
+  {
+    "initials": "SZA",
+    "full_name": "SUE ZANE",
+    "country": "France",
+    "sector": "Health Care",
+    "industry": "Health Care Providers and Services",
+    "PE": 22.5,
+    "price": 68.45,
+    "Available_Stock": 3275.0
+  },
+  {
+    "initials": "TAM",
+    "full_name": "TAD AMES",
+    "country": "USA",
+    "sector": "Information Technology",
+    "industry": "Electronic Equipment, Instruments and Components",
+    "PE": 26.85,
+    "price": 91.67,
+    "Available_Stock": 1425.0
+  },
+  {
+    "initials": "UBO",
+    "full_name": "UMA BOND",
+    "country": "Thailand",
+    "sector": "Energy",
+    "industry": "Oil, Gas and Consumable Fuels",
+    "PE": 19.15,
+    "price": 44.12,
+    "Available_Stock": 3575.0
+  },
+  {
+    "initials": "VCO",
+    "full_name": "VINCE COE",
+    "country": "China",
+    "sector": "Financials",
+    "industry": "Consumer Finance",
+    "PE": 14.95,
+    "price": 76.23,
+    "Available_Stock": 1675.0
+  },
+  {
+    "initials": "WDE",
+    "full_name": "WREN DALE",
+    "country": "UK",
+    "sector": "Consumer Staples",
+    "industry": "Food Products",
+    "PE": 31.5,
+    "price": 29.45,
+    "Available_Stock": 2925.0
+  },
+  {
+    "initials": "XEA",
+    "full_name": "XENA EARL",
+    "country": "France",
+    "sector": "Real Estate",
+    "industry": "Real Estate Management and Development",
+    "PE": 20.4,
+    "price": 82.12,
+    "Available_Stock": 1825.0
+  },
+  {
+    "initials": "YFE",
+    "full_name": "YALE FERN",
+    "country": "USA",
+    "sector": "Communication Services",
+    "industry": "Media",
+    "PE": 25.15,
+    "price": 53.67,
+    "Available_Stock": 3425.0
+  },
+  {
+    "initials": "ZGR",
+    "full_name": "ZION GRAY",
+    "country": "Thailand",
+    "sector": "Industrials",
+    "industry": "Construction and Engineering",
+    "PE": 17.7,
+    "price": 37.23,
+    "Available_Stock": 1275.0
+  },
+  {
+    "initials": "AHI",
+    "full_name": "AVA HILL",
+    "country": "China",
+    "sector": "Consumer Discretionary",
+    "industry": "Hotels, Restaurants and Leisure",
+    "PE": 23.95,
+    "price": 95.34,
+    "Available_Stock": 3725.0
+  },
+  {
+    "initials": "BIX",
+    "full_name": "BEN IVAN",
+    "country": "UK",
+    "sector": "Materials",
+    "industry": "Chemicals",
+    "PE": 16.65,
+    "price": 60.89,
+    "Available_Stock": 1525.0
+  },
+  {
+    "initials": "CJO",
+    "full_name": "CORA JOY",
+    "country": "France",
+    "sector": "Health Care",
+    "industry": "Health Care Providers and Services",
+    "PE": 28.9,
+    "price": 31.78,
+    "Available_Stock": 3175.0
+  },
+  {
+    "initials": "DKE",
+    "full_name": "DALE KENT",
+    "country": "USA",
+    "sector": "Information Technology",
+    "industry": "IT Services",
+    "PE": 21.2,
+    "price": 78.45,
+    "Available_Stock": 1875.0
+  },
+  {
+    "initials": "ELO",
+    "full_name": "ELSA LARK",
+    "country": "Thailand",
+    "sector": "Energy",
+    "industry": "Oil, Gas and Consumable Fuels",
+    "PE": 15.85,
+    "price": 42.34,
+    "Available_Stock": 3475.0
+  },
+  {
+    "initials": "FMA",
+    "full_name": "FAYE MANN",
+    "country": "China",
+    "sector": "Financials",
+    "industry": "Consumer Finance",
+    "PE": 27.65,
+    "price": 86.23,
+    "Available_Stock": 1375.0
+  },
+  {
+    "initials": "GNO",
+    "full_name": "GLEN NORA",
+    "country": "UK",
+    "sector": "Consumer Staples",
+    "industry": "Food Products",
+    "PE": 19.5,
+    "price": 55.78,
+    "Available_Stock": 3625.0
+  },
+  {
+    "initials": "HOA",
+    "full_name": "HANK OAK",
+    "country": "France",
+    "sector": "Real Estate",
+    "industry": "Real Estate Management and Development",
+    "PE": 24.1,
+    "price": 69.67,
+    "Available_Stock": 1725.0
+  },
+  {
+    "initials": "IPI",
+    "full_name": "IRIS PINE",
+    "country": "USA",
+    "sector": "Communication Services",
+    "industry": "Media",
+    "PE": 30.25,
+    "price": 34.23,
+    "Available_Stock": 3275.0
+  },
+  {
+    "initials": "JRU",
+    "full_name": "JADE RUSH",
+    "country": "Thailand",
+    "sector": "Industrials",
+    "industry": "Trading Companies and Distributors",
+    "PE": 17.25,
+    "price": 93.45,
+    "Available_Stock": 1475.0
+  },
+  {
+    "initials": "KSL",
+    "full_name": "KAI SLY",
+    "country": "China",
+    "sector": "Consumer Discretionary",
+    "industry": "Specialty Retail",
+    "PE": 22.7,
+    "price": 48.12,
+    "Available_Stock": 3025.0
+  },
+  {
+    "initials": "LTA",
+    "full_name": "LANE TATE",
+    "country": "UK",
+    "sector": "Materials",
+    "industry": "Metals and Mining",
+    "PE": 16.4,
+    "price": 72.89,
+    "Available_Stock": 1575.0
+  },
+  {
+    "initials": "MUB",
+    "full_name": "MIA UBER",
+    "country": "France",
+    "sector": "Health Care",
+    "industry": "Health Care Providers and Services",
+    "PE": 25.8,
+    "price": 26.45,
+    "Available_Stock": 3375.0
+  },
+  {
+    "initials": "NOV",
+    "full_name": "NOAH VINE",
+    "country": "USA",
+    "sector": "Information Technology",
+    "industry": "IT Services",
+    "PE": 19.05,
+    "price": 81.12,
+    "Available_Stock": 1825.0
+  },
+  {
+    "initials": "OWE",
+    "full_name": "OWEN REED",
+    "country": "Thailand",
+    "sector": "Industrials",
+    "industry": "Construction and Engineering",
+    "PE": 13.85,
+    "price": 98.56,
+    "Available_Stock": 3950.0
+  },
+  {
+    "initials": "PVI",
+    "full_name": "PIPER VAIL",
+    "country": "USA",
+    "sector": "Consumer Discretionary",
+    "industry": "Textiles, Apparel and Luxury Goods",
+    "PE": 32.4,
+    "price": 20.15,
+    "Available_Stock": 2125.0
+  },
+  {
+    "initials": "QZO",
+    "full_name": "QUINCY ZORN",
+    "country": "China",
+    "sector": "Information Technology",
+    "industry": "IT Services",
+    "PE": 27.2,
+    "price": 76.78,
+    "Available_Stock": 1550.0
+  },
+  {
+    "initials": "RWA",
+    "full_name": "RUBY WARD",
+    "country": "UK",
+    "sector": "Health Care",
+    "industry": "Health Care Providers and Services",
+    "PE": 18.25,
+    "price": 40.67,
+    "Available_Stock": 3325.0
+  }
+]
