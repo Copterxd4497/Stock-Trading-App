@@ -43,19 +43,15 @@ exports.countrypage = async (req, res) => {
 };
 
 //Select sector and industry
-// GET /api/stocks/:sector/:industry?  — industry is optional
 exports.sectorAndIndustryPage = async (req, res) => {
   try {
     const { sector, industry } = req.query;
 
-    if (!sector) {
-      return res.status(400).json({
-        status: "error",
-        message: "Sector is required",
-      });
+    // Build matchStage dynamically
+    const matchStage = {};
+    if (sector && sector !== "all") {
+      matchStage.sector = sector;
     }
-
-    const matchStage = { sector: sector };
     if (industry && industry !== "all") {
       matchStage.industry = industry;
     }
@@ -71,6 +67,68 @@ exports.sectorAndIndustryPage = async (req, res) => {
     });
   } catch (err) {
     res.status(500).json({
+      status: "error",
+      message: err.message,
+    });
+  }
+};
+
+exports.getPE = async (req, res) => {
+  try {
+    const { PE } = req.params;
+    const { sector, industry } = req.query;
+
+    const matchStage = {};
+    if (sector && sector !== "all") {
+      matchStage.sector = sector;
+    }
+    if (industry && industry !== "all") {
+      matchStage.industry = industry;
+    }
+
+    const selection = await SPStock.aggregate([
+      { $match: matchStage },
+      { $match: { PE: { $lt: Number(PE) } } },
+      { $sample: { size: 10 } },
+    ]);
+
+    res.status(200).json({
+      status: "success",
+      data: selection,
+    });
+  } catch (err) {
+    res.status(404).json({
+      status: "error",
+      message: err.message,
+    });
+  }
+};
+
+exports.getPrice = async (req, res) => {
+  try {
+    const { price } = req.params;
+    const { sector, industry } = req.query;
+
+    const matchStage = {};
+    if (sector && sector !== "all") {
+      matchStage.sector = sector;
+    }
+    if (industry && industry !== "all") {
+      matchStage.industry = industry;
+    }
+
+    const selection = await SPStock.aggregate([
+      { $match: matchStage },
+      { $match: { price: { $lt: Number(price) } } },
+      { $sample: { size: 10 } },
+    ]);
+
+    res.status(200).json({
+      status: "success",
+      data: selection,
+    });
+  } catch (err) {
+    res.status(404).json({
       status: "error",
       message: err.message,
     });
