@@ -2,6 +2,7 @@ const express = require("express");
 
 const path = require("path");
 const homepageRoute = require("./routes/homepageRoute");
+const purchaseStockRoute = require("./routes/purchaseStockRoute");
 
 const app = express();
 
@@ -17,5 +18,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use("/", homepageRoute);
+app.use("/purchase", purchaseStockRoute);
 
 module.exports = app;
