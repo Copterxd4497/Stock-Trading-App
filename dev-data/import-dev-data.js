@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 
 const SPStock = require("./../models/S&P500");
+const User = require("./../models/userModel.js");
 
 dotenv.config({ path: "./config.env" });
 
@@ -17,11 +18,14 @@ mongoose.connect(DB).then(() => console.log("DB connection successful!"));
 const detail_stocks = JSON.parse(
   fs.readFileSync(`${__dirname}/data/S&P500.json`, "utf-8")
 );
+const detail_users = JSON.parse(
+  fs.readFileSync(`${__dirname}/data/user.json`, "utf-8")
+);
 
 // IMPORT DATA INTO DB
 const importData = async () => {
   try {
-    await SPStock.create(detail_stocks);
+    await User.create(detail_users);
 
     console.log("Data successfully loaded!");
   } catch (err) {
@@ -33,7 +37,7 @@ const importData = async () => {
 // DELETE ALL DATA FROM DB
 const deleteData = async () => {
   try {
-    await SPStock.deleteMany();
+    await User.deleteMany();
 
     console.log("Data successfully deleted!");
   } catch (err) {

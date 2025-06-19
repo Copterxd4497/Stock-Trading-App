@@ -134,3 +134,31 @@ exports.getPrice = async (req, res) => {
     });
   }
 };
+
+//Get the initals or the full_name of That Stock
+exports.initaisAndfull_name = async (req, res) => {
+  try {
+    const { initials, full_name } = req.query;
+
+    // Build matchStage dynamically
+    const matchStage = {};
+    if (initials && initials !== "all") {
+      matchStage.initials = initials;
+    }
+    if (full_name && full_name !== "all") {
+      matchStage.full_name = full_name;
+    }
+
+    const selection = await SPStock.aggregate([{ $match: matchStage }]);
+
+    res.status(200).json({
+      status: "success",
+      data: selection,
+    });
+  } catch (err) {
+    res.status(500).json({
+      status: "error",
+      message: err.message,
+    });
+  }
+};
