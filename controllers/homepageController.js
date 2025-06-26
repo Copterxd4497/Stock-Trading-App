@@ -135,7 +135,7 @@ exports.getPrice = async (req, res) => {
   }
 };
 
-//Get the initals or the full_name of That Stock
+//Get the initials or the full_name of That Stock
 exports.initaisAndfull_name = async (req, res) => {
   try {
     const { initials, full_name } = req.query;
@@ -149,10 +149,14 @@ exports.initaisAndfull_name = async (req, res) => {
       matchStage.full_name = full_name;
     }
 
-    const selection = await SPStock.aggregate([{ $match: matchStage }]);
+    const selection = await SPStock.aggregate([
+      { $match: matchStage },
+      { $project: { initials: 1, full_name: 1, _id: 0 } },
+    ]);
 
     res.status(200).json({
       status: "success",
+      length: selection.length,
       data: selection,
     });
   } catch (err) {
