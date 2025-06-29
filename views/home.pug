@@ -1,0 +1,29 @@
+doctype html
+html
+    head
+        title Stock Trading App - Home
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        header
+            h1 Welcome to the Stock Trading App
+        .center-container
+            main
+                p Track and trade your favorite stocks easily.
+                .auth-links
+                    a(href="#") Login
+                    |  or
+                    a(href="#") Register
+
+                if typeof homeStock !== 'undefined'
+                    ul 
+                        each stock in homeStock 
+                            li
+                                span.stock-initials #{stock.initials}
+                                |  - 
+                                span.stock-name #{stock.full_name}
+                else 
+                    p No stocks found.
+        footer
+            p &copy; #{new Date().getFullYear()} Stock Trading App

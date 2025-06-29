@@ -9,12 +9,12 @@ const userRoute = require("./routes/userRoute");
 
 const app = express();
 
-// // Set Pug as the view engine
-// app.set("view engine", "pug");
-// app.set("views", path.join(__dirname, "views"));
+// Set Pug as the view engine
+app.set("view engine", "pug");
+app.set("views", path.join(__dirname, "views"));
 
-// // Serving static files
-// app.use(express.static(path.join(__dirname, "public")));
+// Serving static files
+app.use(express.static(path.join(__dirname, "public")));
 
 //Middleware
 app.use(express.urlencoded({ extended: true }));

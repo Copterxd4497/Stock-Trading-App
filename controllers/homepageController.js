@@ -8,10 +8,7 @@ exports.homepage = async (req, res) => {
       },
     ]);
 
-    res.status(200).json({
-      status: "success",
-      data: homeStock,
-    });
+    res.status(200).render("home", { homeStock: homeStock });
   } catch (err) {
     res.status(500).json({
       status: "error",
