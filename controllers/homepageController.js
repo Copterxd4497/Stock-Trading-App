@@ -148,14 +148,11 @@ exports.initaisAndfull_name = async (req, res) => {
 
     const selection = await SPStock.aggregate([
       { $match: matchStage },
+      { $sample: { size: 1 } },
       { $project: { initials: 1, full_name: 1, _id: 0 } },
     ]);
 
-    res.status(200).json({
-      status: "success",
-      length: selection.length,
-      data: selection,
-    });
+    res.status(200).json(selection);
   } catch (err) {
     res.status(500).json({
       status: "error",

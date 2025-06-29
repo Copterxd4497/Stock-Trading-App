@@ -9,21 +9,31 @@ html
         header
             h1 Welcome to the Stock Trading App
         .center-container
-            main
-                p Track and trade your favorite stocks easily.
-                .auth-links
-                    a(href="#") Login
-                    |  or
-                    a(href="#") Register
-
-                if typeof homeStock !== 'undefined'
-                    ul 
-                        each stock in homeStock 
-                            li
-                                span.stock-initials #{stock.initials}
-                                |  - 
-                                span.stock-name #{stock.full_name}
-                else 
-                    p No stocks found.
+            .auth-links
+                a(href="#") Login
+                |  or
+                a(href="#") Register
+            .split-container
+                .form-section
+                    form(id="searchForm")
+                        input(type="text", name="search", placeholder="Search by name")
+                        select(name="category")
+                            option(value="") All Categories
+                            option(value="book") Book
+                            option(value="electronics") Electronics
+                        button(type="submit") Search
+                    ul#productList
+                        // Products will be inserted here
+                .stock-section
+                    if typeof homeStock !== 'undefined' && homeStock.length
+                        ul 
+                            each stock in homeStock 
+                                li
+                                    span.stock-initials #{stock.initials}
+                                    |  - 
+                                    span.stock-name #{stock.full_name}
+                    else 
+                        p No stocks found.
         footer
             p &copy; #{new Date().getFullYear()} Stock Trading App
+            script(src='/js/script.js', defer)
