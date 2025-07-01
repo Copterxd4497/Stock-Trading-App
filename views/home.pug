@@ -14,19 +14,13 @@ html
                 |  or
                 a(href="#") Register
             .split-container
-                .form-section
-                    form(id="searchForm")
-                        input(type="text", name="search", placeholder="Search by name")
-                        select(name="category")
-                            option(value="") All Categories
-                            option(value="book") Book
-                            option(value="electronics") Electronics
-                        button(type="submit") Search
-                    ul#productList
-                        // Products will be inserted here
-                .stock-section
+                .stock-section.enhanced-section
+                    .section-header
+                        h2 Stock Highlights
+                        button(type="button", id="refreshStocks", class="refresh-btn") &#x21bb; Refresh
+                        
                     if typeof homeStock !== 'undefined' && homeStock.length
-                        ul 
+                        ul.stock-list
                             each stock in homeStock 
                                 li
                                     span.stock-initials #{stock.initials}
@@ -34,6 +28,23 @@ html
                                     span.stock-name #{stock.full_name}
                     else 
                         p No stocks found.
+                .form-section.enhanced-section
+                    h2 Find a Stock
+                    form(id="searchForm")
+                        .form-group
+                            input(type="text", name="search", placeholder="Search by name")
+                        .form-group
+                            select(name="category")
+                                option(value="") All Categories
+                                option(value="Thailand") Thailand
+                                option(value="USA") USA
+                                option(value="China") China
+                                option(value="UK") UK 
+                                option(value="France") France
+                        .form-group
+                            button(type="submit") Search
+                    ul#productList
+                        // Products will be inserted here
         footer
             p &copy; #{new Date().getFullYear()} Stock Trading App
             script(src='/js/script.js', defer)

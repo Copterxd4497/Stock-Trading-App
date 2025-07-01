@@ -7,6 +7,7 @@ const router = express.Router();
 
 router.route("/").get(homepage.homepage);
 router.route("/eachStock").get(homepage.initaisAndfull_name);
+router.route("/refresh").get(homepage.refresh);
 router.route("/country/:id").get(homepage.countrypage);
 
 router.route("/sector-industry").get(homepage.sectorAndIndustryPage);

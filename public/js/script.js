@@ -28,3 +28,31 @@ document
       list.appendChild(li);
     });
   });
+
+document
+  .getElementById("refreshStocks")
+  .addEventListener("click", async function (e) {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("/refresh");
+      if (!response.ok) throw new Error("Network response was not OK");
+      const stocks = await response.json();
+
+      const stockList = document.querySelector(".stock-list");
+      stockList.innerHTML = ""; // Clear current list
+
+      if (!stocks.length) {
+        stockList.innerHTML = "<li>No stocks found.</li>";
+        return;
+      }
+
+      stocks.forEach((stock) => {
+        const li = document.createElement("li");
+        li.innerHTML = `<span class="stock-initials">${stock.initials}</span> - <span class="stock-name">${stock.full_name}</span>`;
+        stockList.appendChild(li);
+      });
+    } catch (error) {
+      console.error("Fetch error:", error);
+    }
+  });

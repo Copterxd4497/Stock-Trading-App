@@ -1,4 +1,5 @@
 const SPStock = require("./../models/S&P500");
+const catchAsync = require("./../utils/catchAsync");
 
 exports.homepage = async (req, res) => {
   try {
@@ -160,3 +161,13 @@ exports.initaisAndfull_name = async (req, res) => {
     });
   }
 };
+
+exports.refresh = catchAsync(async (req, res) => {
+  const refreshData = await SPStock.aggregate([
+    {
+      $sample: { size: 10 },
+    },
+  ]);
+
+  res.status(200).json(refreshData);
+});
