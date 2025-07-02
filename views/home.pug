@@ -18,6 +18,14 @@ html
                     .section-header
                         h2 Stock Highlights
                         button(type="button", id="refreshStocks", class="refresh-btn") &#x21bb; Refresh
+                    .categories-selection
+                        select(name="country", id="country")
+                                option(value="") All Categories
+                                option(value="Thailand") Thailand
+                                option(value="USA") USA
+                                option(value="China") China
+                                option(value="UK") UK 
+                                option(value="France") France
                         
                     if typeof homeStock !== 'undefined' && homeStock.length
                         ul.stock-list
@@ -26,6 +34,8 @@ html
                                     span.stock-initials #{stock.initials}
                                     |  - 
                                     span.stock-name #{stock.full_name}
+                                    |  -
+                                    span.stock_country #{stock.country}
                     else 
                         p No stocks found.
                 .form-section.enhanced-section

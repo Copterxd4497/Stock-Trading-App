@@ -163,11 +163,17 @@ exports.initaisAndfull_name = async (req, res) => {
 };
 
 exports.refresh = catchAsync(async (req, res) => {
-  const refreshData = await SPStock.aggregate([
-    {
-      $sample: { size: 10 },
-    },
-  ]);
+  const { country } = req.query;
+  let refreshData;
+
+  if (country) {
+    refreshData = await SPStock.aggregate([
+      { $match: { country: country } },
+      { $sample: { size: 10 } },
+    ]);
+  } else {
+    refreshData = await SPStock.aggregate([{ $sample: { size: 10 } }]);
+  }
 
   res.status(200).json(refreshData);
 });

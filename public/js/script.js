@@ -33,13 +33,19 @@ document
   .getElementById("refreshStocks")
   .addEventListener("click", async function (e) {
     e.preventDefault();
-
     try {
-      const response = await fetch("/refresh");
+      // Get the value from the country input field by its ID
+      const countryInput = document.getElementById("country");
+      const country = countryInput ? countryInput.value : "";
+      const params = new URLSearchParams();
+      if (country) params.append("country", country);
+
+      const response = await fetch(`/refresh?${params.toString()}`);
       if (!response.ok) throw new Error("Network response was not OK");
       const stocks = await response.json();
 
       const stockList = document.querySelector(".stock-list");
+
       stockList.innerHTML = ""; // Clear current list
 
       if (!stocks.length) {
@@ -49,7 +55,7 @@ document
 
       stocks.forEach((stock) => {
         const li = document.createElement("li");
-        li.innerHTML = `<span class="stock-initials">${stock.initials}</span> - <span class="stock-name">${stock.full_name}</span>`;
+        li.innerHTML = `<span class="stock-initials">${stock.initials}</span> - <span class="stock-name">${stock.full_name}</span> - <span class="stock-country">${stock.country}</span>`;
         stockList.appendChild(li);
       });
     } catch (error) {
