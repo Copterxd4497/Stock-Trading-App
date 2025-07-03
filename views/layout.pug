@@ -1,0 +1,20 @@
+doctype html
+html
+    head
+        title Stock Trading App
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        nav.navbar-container
+            .navbar-logo
+                a(href="/")
+                    span.logo-icon &#128200;
+                    span.logo-text StockTrader
+            ul.navbar
+                li: a(href="/") Home
+                li: a(href="/portfolio") Portfolio
+                li: a(href="/trade") Trade
+                li: a(href="/history") History
+                li: a(href="/logout") Logout
+        block content

@@ -24,7 +24,7 @@ document
 
     products.forEach((product) => {
       const li = document.createElement("li");
-      li.textContent = `${product.initials} (${product.full_name})`;
+      li.textContent = `${product.initials} (${product.full_name}) - ${product.sector} - ${product.industry}`;
       list.appendChild(li);
     });
   });
