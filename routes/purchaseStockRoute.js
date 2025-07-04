@@ -4,5 +4,6 @@ const purchaseStockController = require("./../controllers/purchaseStockCOntrolle
 const router = express.Router();
 
 router.route("/stock").post(purchaseStockController.purchaseStock);
+router.route("/showPage").get(purchaseStockController.showPage);
 
 module.exports = router;
