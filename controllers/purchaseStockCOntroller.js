@@ -35,3 +35,7 @@ exports.purchaseStock = async (req, res) => {
     });
   }
 };
+
+exports.showPage = (req, res) => {
+  res.status(200).render("buy");
+};

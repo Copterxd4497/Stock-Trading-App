@@ -1,0 +1,21 @@
+extends layout.pug 
+
+block content
+    .center-container
+        .enhanced-section.form-section
+            h2 Buy Stock
+            form#buyStockForm(action="/buy", method="POST")
+                .form-group
+                    label(for="stockSymbol") Stock Symbol
+                    input(type="text", id="stockSymbol", name="stockSymbol", placeholder="e.g. AAPL", required)
+                .form-group
+                    label(for="quantity") Quantity
+                    input(type="number", id="quantity", name="quantity", min="1", placeholder="Enter quantity", required)
+                .form-group
+                    button(type="submit") Buy
+            #buyMessage
+                // Success or error messages will appear here
+
+    footer
+        p &copy; #{new Date().getFullYear()} Stock Trading App
+        script(src='/js/script.js', defer)
