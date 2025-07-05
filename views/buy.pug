@@ -4,7 +4,8 @@ block content
     .center-container
         .enhanced-section.form-section
             h2 Buy Stock
-            form#buyStockForm(action="/buy", method="POST")
+
+            form(id="searchStock")
                 .form-group
                     label(for="stockSymbol") Stock Symbol
                     input(type="text", id="stockSymbol", name="stockSymbol", placeholder="e.g. AAPL", required)

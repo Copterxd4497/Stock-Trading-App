@@ -1,4 +1,5 @@
 const SPStock = require("./../models/S&P500");
+const catchAsync = require("./../utils/catchAsync");
 
 exports.purchaseStock = async (req, res) => {
   try {
@@ -39,3 +40,13 @@ exports.purchaseStock = async (req, res) => {
 exports.showPage = (req, res) => {
   res.status(200).render("buy");
 };
+
+exports.buyStock = catchAsync(async (req, res) => {
+  const { stock, quantity } = req.body;
+
+  const bought = await SPStock.findOneANdUpdate(
+    { initials: stock, Available_Stock: { $gte: quantity } },
+    { $inc: { Available_Stock: -quantity } },
+    { new: true }
+  );
+});
