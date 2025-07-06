@@ -7,11 +7,11 @@ block content
 
             form(id="searchStock")
                 .form-group
-                    label(for="stockSymbol") Stock Symbol
-                    input(type="text", id="stockSymbol", name="stockSymbol", placeholder="e.g. AAPL", required)
+                    label(for="stock") Stock Symbol
+                    input.stockSymbol(type="text", id="stock", name="stock", placeholder="e.g. AAPL", required)
                 .form-group
                     label(for="quantity") Quantity
-                    input(type="number", id="quantity", name="quantity", min="1", placeholder="Enter quantity", required)
+                    input.quantity(type="number", id="quantity", name="quantity", min="1", placeholder="Enter quantity", required)
                 .form-group
                     button(type="submit") Buy
             #buyMessage
@@ -19,4 +19,4 @@ block content
 
     footer
         p &copy; #{new Date().getFullYear()} Stock Trading App
-        script(src='/js/script.js', defer)
+        script(src='/js/buying.js', defer)

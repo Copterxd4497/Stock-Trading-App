@@ -42,11 +42,41 @@ exports.showPage = (req, res) => {
 };
 
 exports.buyStock = catchAsync(async (req, res) => {
-  const { stock, quantity } = req.body;
+  // Accept both 'stock' and 'stockSymbol' for robustness
+  const stock = req.body.stock || req.body.stockSymbol;
+  const quantity = req.body.quantity;
 
-  const bought = await SPStock.findOneANdUpdate(
-    { initials: stock, Available_Stock: { $gte: quantity } },
-    { $inc: { Available_Stock: -quantity } },
+  if (!stock || !quantity) {
+    return res.status(400).json({
+      status: "error",
+      message: "Both stock and quantity are required.",
+    });
+  }
+
+  // Ensure quantity is a number
+  const qty = Number(quantity);
+  if (isNaN(qty) || qty <= 0) {
+    return res.status(400).json({
+      status: "error",
+      message: "Quantity must be a positive number.",
+    });
+  }
+
+  const bought = await SPStock.findOneAndUpdate(
+    { initials: stock, Available_Stock: { $gte: qty } },
+    { $inc: { Available_Stock: -qty } },
     { new: true }
   );
+
+  if (!bought) {
+    return res.status(404).json({
+      status: "error",
+      message: "Stock not found or insufficient available stock.",
+    });
+  }
+
+  res.status(200).json({
+    status: "success",
+    data: bought,
+  });
 });

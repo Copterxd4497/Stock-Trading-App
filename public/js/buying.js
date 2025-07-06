@@ -3,20 +3,37 @@ document
   .addEventListener("submit", async function (event) {
     event.preventDefault();
 
-    const stockSymbol = this.stockSymbol.value;
-    const quantity = this.quantity.value;
+    const stockSymbol = document.getElementById("stock");
+    const quantity = document.getElementById("quantity");
+    const buyMessage = document.getElementById("buyMessage");
 
-    fetch("/purchase/buy", {
+    buyMessage.innerHTML = "";
+
+    fetch("/purchase/buyStock", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        stock: stockSymbol,
-        quantity: quantity,
+        stock: stockSymbol.value,
+        quantity: quantity.value,
       }),
     })
-      .then((response) => response.json())
-      .then((data) => console.log(data))
-      .catch((error) => console.error("Error:", error));
+      .then(async (response) => {
+        const data = await response.json();
+        if (response.ok) {
+          buyMessage.textContent = "Purchase successful!";
+          buyMessage.style.color = "green";
+        } else {
+          buyMessage.textContent =
+            "Failed to purchase: " + (data.message || response.statusText);
+          buyMessage.style.color = "red";
+        }
+        console.log(data);
+      })
+      .catch((error) => {
+        buyMessage.textContent = "Error: " + error.message;
+        buyMessage.style.color = "red";
+        console.error("Error:", error);
+      });
   });
