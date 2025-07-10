@@ -7,7 +7,9 @@
     "active": true,
     "photo": "user-1.jpg",
     "password": "HelloWorld1234",
-    "passwordConfirm": "HelloWorld1234"
+    "passwordConfirm": "HelloWorld1234",
+    "total_PortValue": 123000,
+    "cash_available": 36000
   },
   {
     "_id": "5c8a1dfa2f8fb814b56fa181",
@@ -17,6 +19,56 @@
     "active": true,
     "photo": "user-2.jpg",
     "password": "helloWorld1234",
-    "passwordConfirm": "helloWorld1234"
+    "passwordConfirm": "helloWorld1234",
+    "total_PortValue": 235600,
+    "cash_available": 589000
+  },
+  {
+    "_id": "5c8a1e1a2f8fb814b56fa182",
+    "name": "Michael Chen",
+    "email": "michael.chen@example.com",
+    "role": "user",
+    "active": true,
+    "photo": "user-3.jpg",
+    "password": "Passw0rd!2025",
+    "passwordConfirm": "Passw0rd!2025",
+    "total_PortValue": 150000,
+    "cash_available": 50000
+  },
+  {
+    "_id": "5c8a1e3b2f8fb814b56fa183",
+    "name": "Priya Patel",
+    "email": "priya.patel@example.com",
+    "role": "user",
+    "active": true,
+    "photo": "user-4.jpg",
+    "password": "Priya2025!",
+    "passwordConfirm": "Priya2025!",
+    "total_PortValue": 98000,
+    "cash_available": 12000
+  },
+  {
+    "_id": "5c8a1e5c2f8fb814b56fa184",
+    "name": "Carlos Rivera",
+    "email": "carlos.rivera@example.com",
+    "role": "user",
+    "active": true,
+    "photo": "user-5.jpg",
+    "password": "Rivera2025$",
+    "passwordConfirm": "Rivera2025$",
+    "total_PortValue": 210000,
+    "cash_available": 34000
+  },
+  {
+    "_id": "5c8a1e7d2f8fb814b56fa185",
+    "name": "Emily Johnson",
+    "email": "emily.johnson@example.com",
+    "role": "user",
+    "active": true,
+    "photo": "user-6.jpg",
+    "password": "EmilyJ2025@",
+    "passwordConfirm": "EmilyJ2025@",
+    "total_PortValue": 175000,
+    "cash_available": 27000
   }
 ]

@@ -1,22 +1,18 @@
 const SPStock = require("./../models/S&P500");
+const User = require("./../models/userModel");
+
 const catchAsync = require("./../utils/catchAsync");
+const Market = require("./../utils/market");
 
-exports.homepage = async (req, res) => {
-  try {
-    const homeStock = await SPStock.aggregate([
-      {
-        $sample: { size: 10 },
-      },
-    ]);
+exports.homepage = catchAsync(async (req, res) => {
+  const index = new Market();
 
-    res.status(200).render("home", { homeStock: homeStock });
-  } catch (err) {
-    res.status(500).json({
-      status: "error",
-      message: err.message,
-    });
-  }
-};
+  res.status(200).render("home", { Market_Index: index.currentIndex() });
+});
+
+exports.loginPage = catchAsync(async (req, res) => {
+  res.status(200).render("login");
+});
 
 //Select country
 exports.countrypage = async (req, res) => {

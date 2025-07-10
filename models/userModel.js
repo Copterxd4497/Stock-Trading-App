@@ -45,6 +45,14 @@ const userSchema = new mongoose.Schema({
     default: true,
     select: false,
   },
+  total_PortValue: {
+    type: Number,
+    default: 0,
+  },
+  cash_available: {
+    type: Number,
+    default: 0,
+  },
 });
 
 //Encrypt password before saving in DB

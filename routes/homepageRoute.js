@@ -6,6 +6,8 @@ const authController = require("./../controllers/authController");
 const router = express.Router();
 
 router.route("/").get(homepage.homepage);
+router.route("/loginPage").get(homepage.loginPage);
+
 router.route("/eachStock").get(homepage.initaisAndfull_name);
 router.route("/refresh").get(homepage.refresh);
 router.route("/country/:id").get(homepage.countrypage);

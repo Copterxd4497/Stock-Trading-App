@@ -2,7 +2,6 @@ const fs = require("fs");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 
-const SPStock = require("./../models/S&P500");
 const User = require("./../models/userModel.js");
 
 dotenv.config({ path: "./config.env" });
