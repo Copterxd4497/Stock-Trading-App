@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title WealthTracker Pro - Professional Portfolio Management
+        //- Add your CSS links here
+        link(rel="stylesheet", href="/css/headerStyle.css")
+
+        
+        //- Optionally add favicon or other meta
+
+    body
+        header.header
+            .container
+                nav.nav
+                    .logo
+                        .logo-icon W
+                        .logo-text WealthTracker Pro
+                    ul.nav-links
+                        li: a.active(href="#dashboard") Dashboard
+                        li: a(href="#portfolio") Portfolio
+                        li: a(href="#analytics") Analytics
+                        li: a(href="#research") Research
+                        li: a(href="#reports") Reports
+                    .user-section
+                        .notifications
+                            span 🔔
+                            .notification-badge 3
+                        .user-profile
+                            .profile-img JD
+                            .profile-details
+                                .profile-name John Doe
+                                .profile-role Portfolio Manager
+
+                block content
+

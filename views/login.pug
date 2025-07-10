@@ -1,0 +1,66 @@
+extends layout
+
+block content
+  link(rel="stylesheet", href="/css/loginStyle.css")
+  .login-container
+    .login-brand
+      .brand-logo W
+      h1.brand-title WealthTracker Pro
+      p.brand-subtitle Professional Portfolio Management Platform
+      ul.brand-features
+        li
+          span.feature-icon 📊
+          | Real-time portfolio tracking
+        li
+          span.feature-icon 📈
+          | Advanced analytics & insights
+        li
+          span.feature-icon 🔒
+          | Bank-level security
+        li
+          span.feature-icon 📱
+          | Multi-device synchronization
+
+    .login-form-container
+      .form-header
+        h2.form-title Welcome Back
+        p.form-subtitle Sign in to your account to continue
+
+      .error-message#errorMessage
+        | Invalid email or password. Please try again.
+
+      form.login-form#loginForm
+        .form-group
+          label.form-label(for="email") Email Address
+          input#email.form-input(type="email", placeholder="john.doe@example.com", required, autocomplete="email")
+
+        .form-group
+          label.form-label(for="password") Password
+          .password-field
+            input#password.form-input(type="password", placeholder="Enter your password", required, autocomplete="current-password")
+            button.password-toggle#passwordToggle(type="button") 👁️
+
+        .form-options
+          .remember-me
+            input(type="checkbox", id="remember", name="remember")
+            label(for="remember") Remember me
+          a.forgot-password(href="#") Forgot password?
+
+        button.login-button#loginButton(type="submit")
+          span#buttonText Sign In
+          span.loading#loadingSpinner(style="display: none;")
+
+      .divider
+        span Or continue with
+
+      .social-login
+        button.social-button#googleLogin
+          span 🔍
+          | Google
+        button.social-button#microsoftLogin
+          span 🔷
+          | Microsoft
+
+      .signup-link
+        | Don't have an account? 
+        a(href="#") Sign up for free

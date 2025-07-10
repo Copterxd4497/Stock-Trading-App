@@ -1,0 +1,190 @@
+extends layout 
+
+block content 
+    link(rel="stylesheet", href="/css/style.css")
+    section.dashboard-stats
+        .container
+            .stats-grid
+                .stat-card
+                    .stat-header
+                        .stat-label Total Portfolio Value
+                        .stat-icon(style="background: linear-gradient(135deg, #3b82f6, #1d4ed8);") 💰
+                    .stat-value $2,847,392.45
+                    .stat-change.positive
+                        | ↗ +$127,845.23 (+4.7%)
+                        span.change-period today
+                .stat-card
+                    .stat-header
+                        .stat-label Total Return
+                        .stat-icon(style="background: linear-gradient(135deg, #10b981, #059669);") 📈
+                    .stat-value +28.4%
+                    .stat-change.positive
+                        | ↗ +2.8%
+                        span.change-period this month
+                .stat-card
+                    .stat-header
+                        .stat-label Day's Gain/Loss
+                        .stat-icon(style="background: linear-gradient(135deg, #f59e0b, #d97706);") ⚡
+                    .stat-value +$47,923.12
+                    .stat-change.positive
+                        | ↗ +1.68%
+                        span.change-period today
+                .stat-card
+                    .stat-header
+                        .stat-label Cash Available
+                        .stat-icon(style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);") 💳
+                    .stat-value $234,567.89
+                    .stat-change → Available for investment
+
+    .container
+        .main-content
+            .content-card
+                .card-header
+                    h2.card-title Holdings Overview
+                    .card-actions
+                        button.btn.btn-secondary Export
+                        button.btn.btn-primary Add Position
+                table.holdings-table
+                    thead
+                        tr
+                            th Security
+                            th Quantity
+                            th Price
+                            th Market Value
+                            th Day Change
+                            th Total Return
+                            th % of Portfolio
+                    tbody
+                        tr
+                            td
+                                .stock-info
+                                    .stock-logo(style="background: linear-gradient(135deg, #000, #333);") AAPL
+                                    .stock-details
+                                        h4 Apple Inc.
+                                        .stock-symbol NASDAQ: AAPL
+                            td 2,500
+                            td
+                                .price-info
+                                    .current-price $184.92
+                                    .price-change.positive +2.34%
+                            td $462,300.00
+                            td.positive +$10,590.00
+                            td.positive +$87,450.00 (+23.3%)
+                            td
+                                | 16.2%
+                                .allocation-bar
+                                    .allocation-fill(style="width: 16.2%")
+                        tr
+                            td
+                                .stock-info
+                                    .stock-logo(style="background: linear-gradient(135deg, #cc0000, #990000);") TSLA
+                                    .stock-details
+                                        h4 Tesla Inc.
+                                        .stock-symbol NASDAQ: TSLA
+                            td 1,200
+                            td
+                                .price-info
+                                    .current-price $245.67
+                                    .price-change.positive +5.21%
+                            td $294,804.00
+                            td.positive +$14,628.00
+                            td.positive +$52,804.00 (+21.8%)
+                            td
+                                | 10.4%
+                                .allocation-bar
+                                    .allocation-fill(style="width: 10.4%")
+                        tr
+                            td
+                                .stock-info
+                                    .stock-logo(style="background: linear-gradient(135deg, #00BCF2, #0078D4);") MSFT
+                                    .stock-details
+                                        h4 Microsoft Corporation
+                                        .stock-symbol NASDAQ: MSFT
+                            td 1,500
+                            td
+                                .price-info
+                                    .current-price $425.89
+                                    .price-change.positive +1.87%
+                            td $638,835.00
+                            td.positive +$11,730.00
+                            td.positive +$138,835.00 (+27.8%)
+                            td
+                                | 22.4%
+                                .allocation-bar
+                                    .allocation-fill(style="width: 22.4%")
+                        tr
+                            td
+                                .stock-info
+                                    .stock-logo(style="background: linear-gradient(135deg, #FF9900, #FF6600);") AMZN
+                                    .stock-details
+                                        h4 Amazon.com Inc.
+                                        .stock-symbol NASDAQ: AMZN
+                            td 800
+                            td
+                                .price-info
+                                    .current-price $162.45
+                                    .price-change.negative -1.23%
+                            td $129,960.00
+                            td.negative -$1,620.00
+                            td.positive +$29,960.00 (+30.0%)
+                            td
+                                | 4.6%
+                                .allocation-bar
+                                    .allocation-fill(style="width: 4.6%")
+                        tr
+                            td
+                                .stock-info
+                                    .stock-logo(style="background: linear-gradient(135deg, #4285F4, #1A73E8);") GOOGL
+                                    .stock-details
+                                        h4 Alphabet Inc. Class A
+                                        .stock-symbol NASDAQ: GOOGL
+                            td 2,000
+                            td
+                                .price-info
+                                    .current-price $147.34
+                                    .price-change.positive +3.45%
+                            td $294,680.00
+                            td.positive +$9,840.00
+                            td.positive +$44,680.00 (+17.9%)
+                            td
+                                | 10.3%
+                                .allocation-bar
+                                    .allocation-fill(style="width: 10.3%")
+
+            .sidebar
+                .content-card
+                    .card-header
+                        h3.card-title Portfolio Performance
+                    .chart-container
+                        .chart-controls
+                            .chart-period 1D
+                            .chart-period 1W
+                            .chart-period.active 1M
+                            .chart-period 3M
+                            .chart-period 1Y
+                            .chart-period ALL
+                        .chart
+                            .chart-line
+                .content-card
+                    .card-header
+                        h3.card-title Watchlist
+                        button.btn.btn-secondary + Add
+                    .watchlist
+                        .watchlist-item
+                            .watchlist-info
+                                .watchlist-logo(style="background: linear-gradient(135deg, #1DB954, #1ED760);") SPOT
+                                .watchlist-details
+                                    h5 Spotify Technology
+                                    .watchlist-symbol NYSE: SPOT
+                            .watchlist-price
+                                .watchlist-current $182.45
+                                .watchlist-change.positive +2.8%
+                        .watchlist-item
+                            .watchlist-info
+                                .watchlist-logo(style="background: linear-gradient(135deg, #FF0050, #FF4081);") NFLX
+                                .watchlist-details
+                                    h5 Netflix Inc.
+                                    .watchlist-symbol NASDAQ: NFLX
+                            .watchlist-price
+                                .watchlist-current $452.12
+                                .watchlist-change.negative -1.2%

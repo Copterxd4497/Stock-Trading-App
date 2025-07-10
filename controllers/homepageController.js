@@ -7,7 +7,7 @@ const Market = require("./../utils/market");
 exports.homepage = catchAsync(async (req, res) => {
   const index = new Market();
 
-  res.status(200).render("home", { Market_Index: index.currentIndex() });
+  res.status(200).render("login", { Market_Index: index.currentIndex() });
 });
 
 exports.loginPage = catchAsync(async (req, res) => {
