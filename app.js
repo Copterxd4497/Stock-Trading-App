@@ -21,8 +21,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
 
+app.use("/users", userRoute);
 app.use("/", homepageRoute);
 app.use("/purchase", purchaseStockRoute);
-app.use("/users", userRoute);
 
 module.exports = app;

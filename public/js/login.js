@@ -8,9 +8,12 @@ const login = async (email, password) => {
         password,
       },
     });
+    if (res.status === 200 || res.status === 201) {
+      alert("Everything is okay");
+    }
     console.log(res);
   } catch (err) {
-    console.log(err.response.data);
+    console.log(err.response?.data || err);
   }
 };
 
