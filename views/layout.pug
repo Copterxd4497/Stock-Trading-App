@@ -7,7 +7,7 @@ html(lang="en")
         //- Add your CSS links here
         link(rel="stylesheet", href="/css/headerStyle.css")
 
-        
+
         //- Optionally add favicon or other meta
 
     body
@@ -15,23 +15,25 @@ html(lang="en")
             .container
                 nav.nav
                     .logo
-                        .logo-icon W
-                        .logo-text WealthTracker Pro
+                        a.logo-icon.btn(href="/") W
+                        a.logo-text.btn(href="/") WealthTracker Pro
                     ul.nav-links
                         li: a.active(href="#dashboard") Dashboard
                         li: a(href="#portfolio") Portfolio
                         li: a(href="#analytics") Analytics
                         li: a(href="#research") Research
-                        li: a(href="#reports") Reports
+                        li: a(href="/loginPage") login
                     .user-section
                         .notifications
                             span 🔔
                             .notification-badge 3
                         .user-profile
-                            .profile-img JD
+                            a.profile-img.btn(href="/profilePage") JD
                             .profile-details
-                                .profile-name John Doe
-                                .profile-role Portfolio Manager
+                                a.profile-name.btn(href="/profilePage") John Doe
+                                a.profile-role Portfolio Manager
 
                 block content
+    
+                block script
 

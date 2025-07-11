@@ -1,0 +1,14 @@
+extends layout 
+
+block content 
+    h1 Profile
+    p Welcome to your profile page!
+
+    if user
+        ul
+            li Username: #{user.username}
+            li Email: #{user.email}
+            li Member since: #{user.createdAt.toDateString()}
+    else 
+        ul 
+            li Nobody's here

@@ -76,14 +76,16 @@ exports.protect = catchAsync(async (req, res, next) => {
   let token;
   if (
     req.headers.authorization &&
-    req.headers.authorization.startsWith("Bearer ")
+    req.headers.authorization.startsWith("Bearer")
   ) {
     token = req.headers.authorization.split(" ")[1];
+  } else if (req.cookies.jwt) {
+    token = req.cookies.jwt;
   }
-  // Optionally, you can also check cookies here if you use them
-  // if (!token && req.cookies.jwt) token = req.cookies.jwt;
-
   if (!token) {
+    // Optionally, you can also check cookies here if you use them
+    // if (!token && req.cookies.jwt) token = req.cookies.jwt;
+
     return next(
       new appError(
         "You are not logged in! Please log in first to get access",

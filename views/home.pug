@@ -2,6 +2,7 @@ extends layout
 
 block content 
     link(rel="stylesheet", href="/css/style.css")
+    link(rel="stylesheet", href="/dashBoard/dashboardCSS.css")
     section.dashboard-stats
         .container
             .stats-grid
@@ -15,9 +16,9 @@ block content
                         span.change-period today
                 .stat-card
                     .stat-header
-                        .stat-label Total Return
+                        .stat-label Market Index
                         .stat-icon(style="background: linear-gradient(135deg, #10b981, #059669);") 📈
-                    .stat-value +28.4%
+                    .stat-value.status_color #{Market_Index}
                     .stat-change.positive
                         | ↗ +2.8%
                         span.change-period this month
@@ -188,3 +189,7 @@ block content
                             .watchlist-price
                                 .watchlist-current $452.12
                                 .watchlist-change.negative -1.2%
+
+
+block script 
+   script(src="/dashBoard/dashboardJS.js")
