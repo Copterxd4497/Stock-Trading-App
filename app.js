@@ -21,6 +21,13 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
 
+//Test Middleware
+app.use((req, res, next) => {
+  req.requestTime = new Date().toISOString();
+  console.log(req.cookies);
+  next();
+});
+
 app.use("/users", userRoute);
 app.use("/", homepageRoute);
 app.use("/purchase", purchaseStockRoute);
