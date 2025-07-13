@@ -10,9 +10,13 @@ const login = async (email, password) => {
     });
     if (res.status === 200 || res.status === 201) {
       alert("Everything is okay");
+      window.setTimeout(() => {
+        location.assign("/");
+      }, 100);
     }
     console.log(res);
   } catch (err) {
+    alert(err.response.data.message);
     console.log(err.response?.data || err);
   }
 };

@@ -17,23 +17,38 @@ html(lang="en")
                     .logo
                         a.logo-icon.btn(href="/") W
                         a.logo-text.btn(href="/") WealthTracker Pro
-                    ul.nav-links
-                        li: a.active(href="#dashboard") Dashboard
-                        li: a(href="#portfolio") Portfolio
-                        li: a(href="#analytics") Analytics
-                        li: a(href="#research") Research
-                        li: a(href="/loginPage") login
-                    .user-section
-                        .notifications
-                            span 🔔
-                            .notification-badge 3
-                        .user-profile
-                            a.profile-img.btn(href="/profilePage") JD
-                            .profile-details
-                                a.profile-name.btn(href="/profilePage") John Doe
-                                a.profile-role Portfolio Manager
+
+                    if user    
+                        ul.nav-links
+                            li: a.active(href="#dashboard") Dashboard
+                            li: a(href="#portfolio") Portfolio
+                            li: a(href="#analytics") Analytics
+                            li: a(href="#research") Research
+                            li: a(href="#") logout
+                        .user-section
+
+
+                            .notifications
+                                span 🔔
+                                .notification-badge 3
+                            .user-profile
+                                a.profile-img.btn(href="/profilePage") JD
+                                .profile-details
+                                    a.profile-name.btn(href="/profilePage")= user.name.split(' ')[0]
+                                    a.profile-role Portfolio Manager
+
+                    else    
+                        ul.nav-links
+                            li: a.active(href="#dashboard") Dashboard
+                            li: a(href="#portfolio") Portfolio
+                            li: a(href="#analytics") Analytics
+                            li: a(href="#research") Research
+                            li: a(href="/loginPage") login
+                        .user-section
+
+
 
                 block content
-    
+
                 block script
 
